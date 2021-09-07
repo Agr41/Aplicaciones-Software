@@ -23,6 +23,8 @@ h1{
     grid-row: 2/3;
     justify-self: center;
     font-size: 21px;
+    display: grid;
+    margin: 0 30vh;
 }
 #inps{
     grid-row: 3/4;
@@ -50,6 +52,7 @@ button{
     border: .3vh solid white;
     cursor: pointer;
     border-radius: 1vh;
+    font-weight: 500;
 }
 button:hover {
     color: black;

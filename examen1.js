@@ -10,15 +10,15 @@ let display1 = document.getElementById("dis1");
 let display2 = document.getElementById("dis2");
 //class
 class Inventario {
-    constructor(id, nom, car, sem) {
+    constructor(id, nombre, carrera, semestre) {
         this.id = id;
-        this.nom = nom;
-        this.car = car;
-        this.sem = sem;
+        this.nombre = nombre;
+        this.carrera = carrera;
+        this.semestre = semestre;
         this.articulos = [];
     }
-    add (id, nom, car, sem) {
-        this.articulos[id] = {nom, car, sem};
+    add (id, nombre, carrera, semestre) {
+        this.articulos[id] = {nombre, carrera, semestre};
 
     }
     borrar (id) {
@@ -28,8 +28,8 @@ class Inventario {
         let myJSON = JSON.stringify(this.articulos[id], null, 2);
         return myJSON;
     }  
-    modificar (id, nom, car, sem) {
-        this.articulos[id] = {nom, car, sem};
+    modificar (id, nombre, carrera, semestre) {
+        this.articulos[id] = {nombre, carrera, semestre};
     } 
     mostrar () {
         let str = JSON.stringify(this.articulos, null, 2);
